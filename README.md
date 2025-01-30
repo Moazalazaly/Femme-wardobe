@@ -1,6 +1,6 @@
-Femme Wardrobe
+# Femme wardobe
 
-Femme Wardrobe is an e-commerce website specializing in women's wear and accessories, offering a stylish and user-friendly shopping experience.
+## Femme Wardrobe is an e-commerce website specializing in women's wear and accessories, offering a stylish and user-friendly shopping experience.
 
 🚀 Features
 - Parallax Background Effect: Enhances the visual experience with a smooth scrolling effect.  
