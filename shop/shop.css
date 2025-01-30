@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* header starts here */
+
+.container {
+    background-image: url("/img/shop-img/bg-10.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 88vh;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: scroll;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 22;
+    font-weight: 400;
+    background-color: black;
+}
+
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .logo img {
+    display: block;
+    margin: 0 auto;
+} */
+
+.extras {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.extras i {
+    color: #ffffff;
+    z-index: 22;
+    position: relative;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+} 
+
+
+
+.nav-items ul {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-items ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #ffff;   
+}
+
+.brief {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    z-index: 3;
+    width: 50vw;
+    margin-top: 30px;
+}
+
+
+
+.brief p {
+    font-weight: 400;
+}
+
+.brief h1{
+    font-size: 5.3571428571429rem;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.brief h4 {
+    font-weight: 500;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.8px solid white;
+    padding: 19px 32px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.d-none {
+    display: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+@media (max-width:1100px) {
+    .brief {
+        margin-top: 50px;
+    }
+
+    .brief h1 {
+        font-size: 3rem;
+    }
+
+    .brief h4 {
+        font-size: small;
+    }
+}
+
+@media (max-width:920px) {
+
+    .fa-solid {
+        display: block;
+        position: relative;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extras {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+
+
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        display: none;
+        z-index: 99;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    .nav-items ul li {
+        margin: 30px 0;
+        outline: none;
+    }
+
+    .nav-items ul li a:focus {
+        outline: none;
+    }
+
+    .links-container a.active {
+        color: #878787;
+        transition: 0.5s;
+    }
+
+    .links-container a.active:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+
+
+}
+
+/* most popular starts here */
+
+.shopping {
+    margin: 50px auto;
+    width: 81%;
+}
+
+.shopping-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: gray;
+}
+
+.info select {
+    padding: 10px;
+    border: 0.5px solid gray;
+    outline: none;
+}
+
+
+.shopping-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    width: 25%;
+    padding-bottom: 20px;
+}
+
+.product * {
+    padding: 7px 5px;
+}
+
+.product p {
+    font-family: "Cormorant Garamond",serif;
+    font-size: larger;
+}
+
+.product img {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.price {
+    color: gray;
+    font-weight: 500;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sizes button {
+    margin: 0 5px;
+    color: #00000075;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 3px 13px;
+    border-radius: 3px;
+    font-family: "Cormorant Garamond", serif;
+    border: 0.5px solid black;
+    transition: 0.5s;
+    
+}
+
+.sizes button:hover {
+    border: 0.5px solid #00000075;
+    transition: 0.5s;
+}
+
+.colors {
+    display: flex;
+
+}
+
+.colors * {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.colors .black {
+    background-color: black;
+}
+.colors .green {
+    background-color: green;
+}
+.colors .red {
+    background-color: red;
+}
+.colors .white {
+    background-color: white;
+}
+.colors .beige {
+    background-color: beige;
+}
+
+
+.add-to-cart {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    margin: 15px 0;
+    padding: 12px;
+    transition: 0.5s;
+}
+
+.add-to-cart:hover {
+    background-color: black;
+    color: white    ;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+@media (max-width: 1200px) {
+    .product {
+        width: calc(33.33% - 10px); /* Adjusts to three products per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .product {
+        width: calc(50% - 10px); /* Adjusts to two products per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        width:100%;
+        padding-bottom: 15px;
+    }
+
+    .product img {
+        width: 85%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:  0 10px;
+        margin-bottom: 30px;
+    }
+
+    .info * {
+        margin: 5px;
+    }
+
+
+}
+
+@media (max-width:285px) {
+    .product img {
+        width: 100%;
+    }
+
+    .sizes button {
+        margin: 0 5px;
+        color: #00000075;
+        background-color: #ffffff;
+        cursor: pointer;
+        padding: 3px 5px;
+        border-radius: 3px;
+        font-family: "Cormorant Garamond", serif;
+        border: 0.5px solid black;
+        transition: 0.5s;
+        
+    }
+}
+
+
+
+
+
+
+/* most popular ends here */
+
+/* footer starts here */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    height: 100%;
+    position: relative;
+    border-bottom: 1px dotted black;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+}
+
+footer div {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+footer div ul li {
+    list-style: none;
+    color: #000000;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #00000075;
+    transition: 0.5s;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+footer div ul li a:hover {
+    color: black;
+}
+
+footer .header {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width:500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 30px auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    
+}
+/* footer ends here */

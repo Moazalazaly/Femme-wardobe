@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* header starts here */
+
+
+
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 22;
+    font-weight: 400;
+    background-color: black;
+}
+
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .logo img {
+    display: block;
+    margin: 0 auto;
+} */
+
+.extras {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.extras i {
+    color: #ffffff;
+    z-index: 22;
+    position: relative;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+} 
+
+
+
+.nav-items ul {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-items ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #ffff;   
+}
+
+.brief {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    z-index: 3;
+    width: 50vw;
+    margin-top: 30px;
+}
+
+
+
+.brief p {
+    font-weight: 400;
+}
+
+.brief h1{
+    font-size: 5.3571428571429rem;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.brief h4 {
+    font-weight: 500;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.8px solid white;
+    padding: 19px 32px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.d-none {
+    display: none;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+@media (max-width:1100px) {
+    .brief {
+        margin-top: 50px;
+    }
+
+    .brief h1 {
+        font-size: 3rem;
+    }
+
+    .brief h4 {
+        font-size: small;
+    }
+}
+
+@media (max-width:920px) {
+
+    .fa-solid {
+        display: block;
+        position: relative;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extras {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+
+
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        display: none;
+        z-index: 99;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    .nav-items ul li {
+        margin: 30px 0;
+        outline: none;
+    }
+
+    .nav-items ul li a:focus {
+        outline: none;
+    }
+
+    .links-container a.active {
+        color: #878787;
+        transition: 0.5s;
+    }
+
+    .links-container a.active:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+
+
+}
+
+/* navbar ends here */
+
+/* main starts here */
+
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+    margin: 100px;
+    margin-top: 20px;
+    gap: 25px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.product-info * {
+    margin: 8px 0;
+        font-family: "Cormorant Garamond", serif;
+}
+
+.product-img {
+    width: 100%;
+    height: 100vh;
+}
+
+.sizes {
+    display: flex;
+    align-items: center;
+}
+
+.sizes button {
+    margin: 0 5px;
+    color: #00000075;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 3px 13px;
+    border-radius: 3px;
+
+    border: 0.5px solid black;
+    transition: 0.5s;
+    
+}
+
+.sizes button:hover {
+    border: 0.5px solid #00000075;
+    transition: 0.5s;
+}
+
+.colors {
+    display: flex;
+
+}
+
+.colors * {
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    color: black;
+    border: 1px solid black;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.colors .black {
+    background-color: black;
+}
+.colors .green {
+    background-color: green;
+}
+.colors .red {
+    background-color: red;
+}
+.colors .white {
+    background-color: white;
+}
+.colors .beige {
+    background-color: beige;
+}
+
+.path {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.category {
+    font-size: 17px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 800;
+}
+
+.name {
+    font-size: 19px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.clear {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addToCart {
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+    border: 1px solid black;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.more-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToCart:hover {
+    background-color:black ;
+    color: white;
+}
+
+.counter {
+    border-right: 1px solid #777777;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    padding: 10px 0px;
+}
+
+.minus,.screen,.plus {
+    border-left: 1px solid #777777;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+.path , .price span , .description{
+    color: #777777;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* main ends here */
