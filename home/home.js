@@ -44,6 +44,11 @@ exit.addEventListener("click",()=> {
     cartSideBar.classList.remove("show")
 })
 
+const images = document.querySelectorAll("img");
+images.forEach((image) => {
+        image.setAttribute("loading", "lazy");
+})
+
 
 
 

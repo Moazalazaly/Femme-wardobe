@@ -30,3 +30,8 @@ menuBar.addEventListener("click",() => {
         navBarContainer.style.height = "100vh";
     }
 })
+
+const images = document.querySelectorAll("img");
+images.forEach((image) => {
+        image.setAttribute("loading", "lazy");
+})
