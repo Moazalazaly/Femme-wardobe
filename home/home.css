@@ -241,8 +241,19 @@ nav {
 
 .btn:hover {
     background-color: white;
-    color: black !important;
+    color: black;
     transition: 0.5s;
+}
+
+.btn:hover a {
+    color: black;
+    transition: 0.5s;
+}
+
+
+.btn a {
+    text-decoration: none;
+    color: white;
 }
 
 .d-none {
@@ -598,10 +609,9 @@ nav {
     font-weight: 600;
 }
 
-.blazers-collection button {
+.blazers-collection .blazers-btn {
     margin-top: 15px;
     background-color: transparent;
-    color: black;
     border: 0.8px solid black;
     padding: 15px 25px;
     cursor: pointer;
@@ -611,14 +621,26 @@ nav {
     font-family: sans-serif;
 } 
 
+.blazers-collection .blazers-btn a{
+    text-decoration: none;
+    color: black;
+
+} 
+
 .blazers-collection h6 {
     color: #00000075;
 }
 
-.blazers-collection button:hover {
-    background-color: black;
+.blazers-collection .blazers-btn:hover {
+    background-color: black;    
+    transition: 0.5s;
+}
+
+.blazers-collection .blazers-btn:hover a { 
     color: white;
     transition: 0.5s;
+    width: 100%;
+    height: 100%;
 }
 
 @media(max-width:800px) {
