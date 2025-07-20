@@ -7,13 +7,12 @@
 
 ---
 
-## 🔧 Technologies Used
+## Technologies Used
 
 - **HTML5**
 - **CSS3** (Flexbox, Grid, Media Queries, Parallax)
 - **JavaScript (Vanilla)**
 - **Fetch API** – for dynamic content loading
-- **Netlify** – for deployment
 
 ---
 
