@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* 
+header starts here */
+
+.container {
+    background-image: url("../contact/contact-us\ backgroun.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: scroll;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 22;
+    font-weight: 400;
+}
+
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .logo img {
+    display: block;
+    margin: 0 auto;
+} */
+
+.extras {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.extras i {
+    color: #ffffff;
+    z-index: 22;
+    position: relative;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+} 
+
+
+
+.nav-items ul {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-items ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #ffff;   
+}
+
+.brief {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    z-index: 3;
+    width: 50vw;
+    margin-top: 30px;
+}
+
+
+
+.brief p {
+    font-weight: 400;
+}
+
+.brief h1{
+    font-size: 5.3571428571429rem;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.brief h4 {
+    font-weight: 500;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.8px solid white;
+    padding: 19px 32px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .brief {
+        margin-top: 50px;
+    }
+
+    .brief h1 {
+        font-size: 3rem;
+    }
+
+    .brief h4 {
+        font-size: small;
+    }
+}
+
+@media (max-width:920px) {
+
+    .fa-solid {
+        display: block;
+        position: relative;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extras {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+
+    
+
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        display: none;
+        z-index: 99;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    .nav-items ul li {
+        margin: 30px 0;
+        outline: none;
+    }
+
+    .nav-items ul li a:focus {
+        outline: none;
+    }
+
+    .links-container a.active {
+        color: #878787;
+        transition: 0.5s;
+    }
+
+    .links-container a.active:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+
+
+}
+
+/* header ends here */
+
+/* get in touch starts here */
+
+.get-in-touch {
+    padding: 0 138px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 40px;
+    margin: 100px 0;
+}
+
+.text {
+    grid-area:1/1/2/7 ;
+    text-align: center;
+}
+
+.text * {
+    margin: 10px;
+}
+
+.text h2 {
+
+    width: 60%;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.4em;
+    font-size: 31px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.get-in-touch form {
+    grid-area: 2/1/3/4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+.get-in-touch form .message {
+    height: 200px;
+    padding: 12px 10px;
+    border: 1px solid #ccc; 
+    color: black;
+
+}
+
+.get-in-touch form input {
+
+    padding: 10px;
+    margin: 10px 0; 
+    width: 100%;
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.get-in-touch form button {
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 10px 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0.5px solid black;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.get-in-touch form button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+
+.placeholder-style{
+    color: gray; 
+    opacity: 0.7; 
+    font-size: 15px;
+}
+
+.our-contact {
+    grid-area:2/4/3/7 ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,min-content);
+    margin-top: 50px;
+    gap: 0;
+}
+
+
+.contact-element p , .contact-element h6 {
+    margin: 10px 0;
+}
+
+.contact-element p  {
+    color: gray;
+    font-weight: 500;
+}
+
+.contact-element h6 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.contact-element hr {
+    margin: 15px 0;
+}
+
+.address {
+    grid-area: 2/1/3/3;
+}
+
+.follow {
+    grid-area: 3/1/4/3;
+    display: flex;
+    align-items: center;
+}
+
+.follow a {
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+    
+}
+
+
+
+
+@media (max-width:1050px) {
+    .text h2 {
+        width: 100%;
+        font-size: 27px;
+    }
+    .get-in-touch {
+        padding: 0 24px;
+    }
+}
+
+@media (max-width:765px) {
+
+    .text h2 {
+        font-size: 20px;
+    }
+
+    .get-in-touch {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .text h2 {
+        font-size: 17px;
+    }
+    .our-contact {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .follow p {
+        font-size: 13px;
+        
+    }
+}
+/* get in touch ends here */
+
+.map {
+    margin:130px 0;
+}
+
+/* advantages starts here */
+
+
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 50px 30px;
+    gap: 20px;
+}
+
+.advantage-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.advantage-item i {
+    font-size: 22px;
+}
+
+
+
+.advantage-item * {
+    margin-top: 15px;
+} 
+.advantage-item h3 {
+    font-size: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.advantages p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.advantage-item h3, .advantage-item p {
+    width: 100%;
+}
+
+@media (max-width:1000px) {
+    .advantages {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-content: center;
+    }
+}
+@media (max-width:1000px) {
+    .advantages {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:700px) {
+    .advantages {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* advantages ends here */
+
+
+/* explore collection ends here */
+.explore-collection {
+    background: url(/img/bg-005.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.explore-collection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+.explore-collection-container{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 2;
+    color: #ffffff;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.explore-collection img {
+    width: 100%;
+}
+
+.explore-collection-container * {
+    margin: 10px 0;
+}
+
+.explore-collection-container h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+}
+
+
+.explore-collection button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+
+@media (max-width:750px) {
+
+    .explore-collection-container {
+        display: flex;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 400px;
+        padding: 20px;
+    }
+
+    .explore-collection-container h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .explore-collection-container {
+        display: flex;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 250px;
+        padding: 20px;
+    }
+
+    .explore-collection-container h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 25px;
+    }
+
+}
+
+
+/* explore collection ends here */
+
+/* footer starts here */
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+footer div {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+footer div ul li {
+    list-style: none;
+    color: #000000;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #00000075;
+    transition: 0.5s;
+    font-size: 14px;
+}
+footer div ul li a:hover {
+    color: black;
+}
+
+footer .header {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 30px auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    
+}
+/* footer ends here */
+
+
+

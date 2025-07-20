@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* 
+header starts here */
+
+.container {
+    background-image: url("/img/about-img/header-section-background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-attachment: scroll;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content:space-around;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 22;
+    font-weight: 400;
+}
+
+
+.nav-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .logo img {
+    display: block;
+    margin: 0 auto;
+} */
+
+.extras {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.extras i {
+    color: #ffffff;
+    z-index: 22;
+    position: relative;
+    text-align: center;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+} 
+
+
+
+.nav-items ul {
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-items ul li  {
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #ffff;   
+}
+
+.brief {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    z-index: 3;
+    width: 50vw;
+    margin-top: 30px;
+}
+
+
+
+.brief p {
+    font-weight: 400;
+}
+
+.brief h1{
+    font-size: 5.3571428571429rem;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+}
+
+.brief h4 {
+    font-weight: 500;
+    text-align: center;
+    margin: 7px 0;
+}
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: 0.8px solid white;
+    padding: 19px 32px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.5s;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width:1100px) {
+    .brief {
+        margin-top: 50px;
+    }
+
+    .brief h1 {
+        font-size: 3rem;
+    }
+
+    .brief h4 {
+        font-size: small;
+    }
+}
+
+@media (max-width:920px) {
+
+    .fa-solid {
+        display: block;
+        position: relative;
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .extras {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .container {
+        height: 50vh;
+    }
+
+
+    
+
+    .nav-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        color: white;
+        display: none;
+        z-index: 99;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+
+    .nav-items ul li {
+        margin: 30px 0;
+        outline: none;
+    }
+
+    .nav-items ul li a:focus {
+        outline: none;
+    }
+
+    .links-container a.active {
+        color: #878787;
+        transition: 0.5s;
+    }
+
+    .links-container a.active:hover {
+        color: white;
+        transition: 0.5s;
+    }
+
+
+
+}
+
+/* header ends here */
+
+/* about starts here */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 120px;
+}
+
+.headline {
+    padding: 30px;
+    min-width: 50%;
+    align-self: flex-start;
+}
+
+.headline h2 {
+    font-size: 53px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    line-height: 1.3em;
+    font-weight: 500;
+}
+
+.story {
+    padding: 30px;
+    min-width: 50%;
+}
+
+.story * {
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+
+.story p {
+    line-height: 3px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.story h5 {
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight:600;
+}
+
+.story h6 {
+    font-size: 16px;
+    color: gray;
+    font-family: sans-serif;
+}
+
+
+@media (max-width:1100px) {
+    .about {
+        margin: 80px 50px;
+    }
+    
+}
+
+@media (max-width:850px) {
+    .about {
+        margin: 80px 20px;
+    }
+    
+}
+
+@media (max-width:769px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .story {
+        width: 100%;
+        padding: 0;
+    }
+
+    .headline {
+        padding: 30px 0;
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .headline h2 {
+        font-size: 40px;
+    }
+
+
+}
+/* about ends here */
+
+/* quality assurance starts here */
+
+.quality-assurance {
+    margin: 100px 140px;
+}
+
+.quality-assurance * {
+    margin: 15px 0;
+}
+
+.quality-assurance h2 {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+.quality-assurance h6 {
+    font-size: 16px;
+    font-weight:500;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+@media (max-width:1100px) {
+    .quality-assurance {
+        margin: 80px 30px;
+    }
+    
+}
+
+@media (max-width:850px) {
+    .quality-assurance {
+        margin: 80px 20px;
+    }
+
+    .quality-assurance h2 {
+        font-size: 38px;
+    } 
+}
+
+@media (max-width:500px) {
+    .quality-assurance {
+        margin: 80px 20px;
+    }
+
+    .quality-assurance h2 {
+        font-size: 28px;
+    } 
+}
+
+
+/* quality assurance ends here */
+
+/* customer-centric-approach starts here */
+
+.customer-centric {
+    background: url(/img/about-img/customer-service-background.jpg);
+    height: 105vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.customer-centric::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.61    ); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+.customer-centric-container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+    z-index: 2;
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.customer-centric-container * {
+    margin: 10px 0;
+}
+
+.customer-centric-container * {
+    margin: 15px 0;
+}
+
+.customer-centric-container h2 {
+    font-size: 45px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+.customer-centric-container h6 {
+    font-size: 16px;
+    font-weight:400;
+    line-height: 1.5em;
+    font-family: sans-serif;
+}
+
+@media (max-width:1100px) {
+    .customer-centric-container{
+        left: 30px;
+        width: 80%;
+    }
+
+
+}
+
+
+@media (max-width:1150px) {
+    .customer-centric {
+        height: 120vh;
+
+    }
+    .customer-centric-container h2 {
+        font-size: 35px;
+    }
+    
+    .customer-centric-container h6 {
+        font-size: 16px;
+
+    }
+    
+    
+}
+
+@media (max-width:750px) {
+    .customer-centric-container{
+        padding: 0 5px;
+        width: calc(100%-10px);
+        overflow: hidden;
+    }
+
+    .customer-centric {
+        height: 150vh;
+    }
+
+    .customer-centric-container h2 {
+        font-size: 25px;
+    }
+    
+    .customer-centric-container h6 {
+        font-size: 13px;
+
+    }
+
+
+}
+
+
+/* customer-centric-approach ends here */
+
+/* sustainable initiatives start here */
+.sustainable-initiatives {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+}
+
+.heading {
+    align-self: flex-start;
+    margin-left: 150px;
+}
+
+.heading p {
+    font-size: small;
+    line-height: 1.4em;
+}
+
+.heading h2 {
+    font-size: 56px;
+    font-style: italic;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.sustainable-about {
+    margin: 40px 130px 120px 130px;
+    gap: 30px;
+}
+
+.sustainable-headline h4 {
+    line-height: 1.3em;
+    font-size: 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.sustainable-headline {
+    padding: 0;
+}
+
+.sustainable-story {
+    padding: 0;
+}
+
+.sustainable-story p {
+    line-height: 1.3em;
+    color: #8a8a8a;
+    font-family: sans-serif;
+}
+
+@media (max-width:800px) {
+    .heading{
+        margin: 0 20px;
+    }
+
+    .sustainable-about {
+        margin: 35px 20px 120px 20px;
+    }
+}
+
+@media (max-width:550px) {
+    .heading h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:450px) {
+    .heading h2 {
+        font-size: 30px;
+    }
+}
+
+/* sustainable initiatives end here */
+
+/* explore collection ends here */
+.explore-collection {
+    background: url(/img/bg-005.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.explore-collection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the 0.5 value for desired darkness */
+    z-index: 1;
+
+}
+
+.explore-collection-container{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 2;
+    color: #ffffff;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.explore-collection img {
+    width: 100%;
+}
+
+.explore-collection-container * {
+    margin: 10px 0;
+}
+
+.explore-collection-container h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+}
+
+
+.explore-collection button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+
+@media (max-width:750px) {
+
+    .explore-collection-container {
+        display: flex;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 400px;
+        padding: 20px;
+    }
+
+    .explore-collection-container h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    .explore-collection-container {
+        display: flex;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 250px;
+        padding: 20px;
+    }
+
+    .explore-collection-container h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 25px;
+    }
+
+}
+
+
+/* explore collection ends here */
+
+/* footer starts here */
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+footer div {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    z-index: 999;
+}
+
+footer div ul li {
+    list-style: none;
+    color: #000000;
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: #00000075;
+    transition: 0.5s;
+    font-size: 14px;
+}
+footer div ul li a:hover {
+    color: black;
+}
+
+footer .header {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:500px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 30px auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    
+}
+/* footer ends here */
