@@ -1,4 +1,4 @@
-# 👗 Femme Wardrobe
+# Femme Wardrobe
 
 **Live Demo:** [femmewardrobe.com](https://classy-churros-b5d37b.netlify.app/home/home)  
 **GitHub Repo:** [GitHub Repository](https://github.com/Moazalazaly/Femme-wardobe)
